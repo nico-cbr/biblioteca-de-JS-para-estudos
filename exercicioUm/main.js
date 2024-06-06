@@ -79,6 +79,12 @@ function conta(){
 console.log(conta);
 conta();
 
+// function conta(numero1, numero2){
+//     return console.log( numero1 + numero2);
+// }
+
+// conta(2,3);
+
 console.log('----------------');
 // 11 - Crie ua função que multiplique dois numeros e use template string para manipular o resultado no console
 function multiplique(){
@@ -89,3 +95,9 @@ function multiplique(){
 }
 console.log(multiplique);
 multiplique();
+
+// function conta(numero1, numero2){
+//     return console.log(à multiplicação de ${numero1, numero2} e o resultado ${numero1 * numero2});
+// }
+
+// conta(2,3);
