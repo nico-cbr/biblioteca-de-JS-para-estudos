@@ -62,6 +62,12 @@ function exibirNome(){
 console.log(exibirNome)
 exibirNome()
 
+// function exibirN(){
+//     return console.log('Demetrio baladao')
+// }
+
+// exibirN()
+
 console.log('----------------');
 // 10 - Crie uma função para soma de dois numeros
 function conta(){
