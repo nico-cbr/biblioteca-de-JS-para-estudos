@@ -11,7 +11,7 @@ function setup() {
 
 function mouseDragged(){
   let r = random(10,50);
-  let bolha = new Bolha(mouseX, mouseY, r, color(240, 234, 68));
+  let bolha = new Bolha(mouseX, mouseY, r, color(random(0,255), random(0,255), random(0.255)));
   bolhas.push(bolha);
 }
 
