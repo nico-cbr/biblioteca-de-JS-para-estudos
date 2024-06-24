@@ -1,0 +1,24 @@
+programação BackEnd.
+1 - Assincronismo.
+2 - Funções Assincronas  / Async e Await.
+3 - Requisições HTTP.
+4 - API e EndPoints.
+
+---------------
+Assincronismo:
+    --Sincronismo é uma tarefa que depende exclusivamente do tempo de processamento e resposta do sistema.
+
+Assincronismo nas requisições HTTP:
+                    Fetch()       EndPoint
+    FrontEnd --req--> API ----> Banco de Dados  <-| req = requisição.
+    FrontEnd <--res-- API <---- Banco de Dados  <-| res = resposta.
+        JSON: Java Script Object Notation.
+Como funciona o fetch:
+        Fetch('.....',{opções}).
+                       |-> Get. C
+                       |-> Put/Update.
+                       |-> Read.
+                       |-> Delete.
+    Promise (É uma classe que permite a construção de funções de processamento assíncrono representando um valor que poderá estar disponível no futuro.).
+     |-> Async.
+     |-> Await
