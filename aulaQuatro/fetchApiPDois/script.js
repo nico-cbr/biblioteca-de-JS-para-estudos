@@ -1,6 +1,10 @@
 //Realizando o fetch no EndPoint
 
-//percorrendo os 100 primeiros pokemon
+// const insira = () =>{
+// let id = Number(prompt("insira um numero"))
+// pegaPokemon(id);
+// }
+// percorrendo os 100 primeiros pokemon
 const fetchPokemom = async () =>{
     for(let i = 1; i <= 100; i++){
         await pegaPokemon(i)
@@ -13,8 +17,9 @@ const pegaPokemon = async (id) => {
     const res = await fetch(url)
     const data = await res.json()
     // console.log(data.name);
+    // console.log(data.name)
     console.log(data.types[0].type.name)
 }
 
-
 fetchPokemom()
+// insira()
