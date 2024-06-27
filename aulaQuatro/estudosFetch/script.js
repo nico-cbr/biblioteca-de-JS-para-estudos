@@ -9,7 +9,7 @@ const fetchPokemon = async () =>{
   
       try {
         // pegando o valor que é colocado no input
-        const pokemonID = document.getElementById('pegaPokemon').value;
+        const pokemonID = document.getElementById('pegaPokemon').value.toLowerCase();
 
         // Fazendo o fetch (fazendo a promise) e buscando a informação
         const resp =  await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonID}`);
