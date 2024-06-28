@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Fetch parte 4</title>
+</head>
+<body>
+    
+    <header>
+        <img src="./assets/poke.jpeg" alt="Banner Pokemon">
+    </header>
+
+    <div class="pesquisa">
+        <input type="text" id="pokemonID" placeholder="digite aqui o ID do Pokemon">
+        <button onclick="fetchPokemon()">Buscar</button> <br>
+    </div>
+
+        <div class="card">
+            <img src="" alt="Imagem Pokemon" id="pokemonSprite" style="display: none">
+            <h1 id="pokemonNome"></h1>
+            <p id="pokemonTipo"></p>
+        </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

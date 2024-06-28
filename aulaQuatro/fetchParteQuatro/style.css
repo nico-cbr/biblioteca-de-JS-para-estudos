@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header img{
+    width: 110%;
+    height: 100px;
+    object-fit: fill;
+}
+
+.pesquisa{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 10px;
+    width: 100%;
+}
+
+.pesquisa input{
+    font-size: 15px;
+    width: 60%;
+    color: #2f67ac;
+    padding: 10px;
+    border: 1px solid #15123e;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+}
+
+.pesquisa button{
+    font-size: 10px;
+    border: none;
+    padding: 10px;
+    background: #f7c505;
+    color: #15123e;
+    box-shadow: rgba(0,0,0,0.30) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.card{
+    display: block;
+    text-align: center;
+    width: 50%;
+    height: 215px;
+    background: #f7c505;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+    color: #fff;
+}
+
+.card img{
+    background: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.card h1{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.card p{
+    margin-top: 10px;
+}
