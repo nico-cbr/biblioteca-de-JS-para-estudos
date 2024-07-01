@@ -1,6 +1,24 @@
 // Selecionando a div pokeContainer
 const pokeContainer = document.getElementById('pokeContainer');
 const pokemonCount = 100;
+const colors = {
+    fire: '#FDDFDF',
+    grass: '#DEFDE0',
+    electric: '#FCF7DE',
+    water: '#DEF3FD',
+    ground: '#f4e7da',
+    rock: '#d5d5d4',
+    fairy: '#fceaff',
+    poison: '#98d7a5',
+    bug: '#f8d5a3',
+    dragon: '#97b3e6',
+    psychic: '#eaeda1',
+    flying: '#F5F5F5',
+    fighting: '#E6E0D4',
+    normal: '#F5F5F5'
+}
+
+const mainTypes = Object.keys(colors); // retorna o objeto da lista => saida esperada [fire, grass, eletric].
 
 // Função que percorre o objeto do fetch
 const fetchPokemon = async () =>{
@@ -26,8 +44,14 @@ const createPokemonCard =  (poke) =>{
     // inserindo os elementos do card 
 
     const name = poke.name[0] + poke.name.slice(1);
-    const id = poke.id.toString();
-    const type = poke.types[0].type.name;
+    const id = poke.id.toString(); // .padStart(3,0) -- Serve para que?
+
+    // Criar uma constante com o valor -- poke.types.map(type => type.type.name) para que serve?
+
+    const type = poke.types[0].type.name; // trocar valor para -- mainTypes.find(type => pokeTypes.indexOf(type) > -1) para que serve?
+
+    //criar constante color = colors (nome da array)[types];
+    // card.style.backgroundColor = color;
 
     // criando o card
 
